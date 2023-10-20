@@ -37,10 +37,6 @@ elif 'CAT' in content:
     print('COMMAND INJECTION ATTACK DETECTED\n CAT found in log')
 elif 'TYPE' in content:
     print('COMMAND INJECTION ATTACK DETECTED\n TYPE found in log')
-elif 'ID' in content:
-    print('COMMAND INJECTION ATTACK DETECTED\n ID found in log')
-elif 'id' in content:
-    print('COMMAND INJECTION ATTACK DETECTED\n id found in log')
 elif 'type' in content:
     print('CROSS SITE SCRIPTING ATTACK DETECTED\n type found in log')
 elif 'cat' in content:
@@ -59,5 +55,11 @@ elif '/etc/passwd' in content:
     print('local file inclusion and remote file inclusion ATTACK DETECTED\n ALERT found in log')
 elif '/' in content:
     print('local file inclusion and remote file inclusion ATTACK DETECTED\n ALERT found in log')
+elif 'ID' in content:
+    print('COMMAND INJECTION ATTACK DETECTED\n ID found in log')
+elif 'id' in content:
+    print('COMMAND INJECTION ATTACK DETECTED\n id found in log')
+elif 'nikto' in content:
+    print('NIKTO DETECTED\n nikto found in log')
 else:
     print('string does not exist')
