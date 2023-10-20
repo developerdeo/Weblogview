@@ -1,5 +1,5 @@
 print('Enter name of the file:')
-xl = input()
+xl = input("name:")
         # read all content from a file using read()
 f = open(xl, "a")
 file = open(xl, 'r')
